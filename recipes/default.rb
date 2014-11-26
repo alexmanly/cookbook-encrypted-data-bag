@@ -4,13 +4,10 @@
 #
 # Copyright (c) 2014 The Authors, All Rights Reserved.
 
-# from the root of this cookbook run:
-# openssl rand -base64 512 > files/default/encrypted_data_bag_secret
-#
-# chef gem install knife-solo_data_bag
-# 
-# knife solo data bag create admins sally --secret-file files/default/encrypted_data_bag_secret 
+# See README.md to explain the key setup for this example
 
+# This example pulls in the secret from this cookbook.
+# The secret could also be stored in a secure location on your network. 
 cookbook_file "/tmp/encrypted_data_bag_secret" do
 	source "encrypted_data_bag_secret"
 	action :create
