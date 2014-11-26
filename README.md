@@ -9,5 +9,9 @@ from the root of this cookbook run:
 -  openssl rand -base64 512 > files/defaultencrypted_data_bag_secret
 -  chef gem install knife-solo_data_bag
 -  knife solo data bag create admins sally --secret-file files/default/encrypted_data_bag_secret 
+-  kitchen converge 
+-  kitchen converge
 
+The first time you run kitchen converge you will see the file moved onto the server
+The second time you run kitchen converge you will see the decrypted password in the output
 
