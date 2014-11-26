@@ -1,0 +1,9 @@
+{
+  "id": "sally",
+  "pwd": {
+    "encrypted_data": "MdOf4gvnAL/rYhSh/SzeW2ZXzVXqqD+u3PqS1so5iluGs03hH/99nMVuGPsn\n/LzH\n",
+    "iv": "DJHWjXH8CRSMg9CrVBBHgg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
